@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1771036705916",
+    "annotation": {
+      "sourceLocation": "src/App.tsx:22:6",
+      "comment": "将该文案修改为：你好。React",
+      "element": "<App> h1 \"Vite + React\""
+    }
+  },
+  {
+    "id": "1771036720482",
+    "annotation": {
+      "sourceLocation": "src/App.tsx:27:8",
+      "comment": "字体颜色修改为 红色",
+      "element": "<App> paragraph: \"Edit src/App.tsx and save to test HMR\""
+    }
+  }
+]

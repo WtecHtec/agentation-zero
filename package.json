@@ -1,0 +1,61 @@
+{
+  "name": "agentation-zero",
+  "version": "0.0.5",
+  "description": "Zero-config, AI-native web annotation tool for teams.",
+  "type": "module",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "./dist/client/agentation-zero.cjs",
+  "module": "./dist/client/agentation-zero.js",
+  "types": "./dist/client/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/client/agentation-zero.js",
+      "require": "./dist/client/agentation-zero.cjs"
+    },
+    "./client/main": {
+      "import": "./dist/client/main.js",
+      "require": "./dist/client/main.cjs"
+    },
+    "./plugins/http": {
+      "types": "./dist/plugins/http.d.ts",
+      "import": "./dist/plugins/http.js",
+      "require": "./dist/plugins/http.cjs"
+    },
+    "./plugins/locator": {
+      "types": "./dist/plugins/locator.d.ts",
+      "import": "./dist/plugins/locator.js",
+      "require": "./dist/plugins/locator.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@ngrok/ngrok": "^1.7.0",
+    "serve-handler": "^6.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/plugin-syntax-jsx": "^7.28.6",
+    "@types/babel__core": "^7.20.5",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "sass": "^1.70.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}
