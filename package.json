@@ -2,6 +2,18 @@
   "name": "agentation-zero",
   "version": "0.0.5",
   "description": "Zero-config, AI-native web annotation tool for teams.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WtecHtec/agentation-zero.git"
+  },
+  "keywords": [
+    "vite",
+    "annotation",
+    "ai",
+    "agent"
+  ],
+  "author": "WtecHtec",
+  "license": "MIT",
   "type": "module",
   "files": [
     "dist",
